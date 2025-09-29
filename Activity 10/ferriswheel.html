@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.wheel{
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+}
+.line{
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+
+}
+.line:nth-of-type(2){
+    transform: rotate(60deg);
+}
+.line:nth-of-type(3){
+    transform: rotate(120deg);
+}
+.line:nth-of-type(4){
+    transform: rotate(180deg);
+}
+.line:nth-of-type(5){
+    transform: rotate(240deg);
+}
+.line:nth-of-type(6){
+    transform: rotate(300deg);
+}
+
+.cabin{
+    position: absolute;
+    border: 2px solid black;
+    height: 20%;
+    width: 20%;
+    background-color: red;
+    border-radius: 10%;
+
+    transform-origin: 50% 0%;
+}
+.cabin:nth-of-type(1){
+    top: 50%;
+    right: -8.5%;
+}
+.cabin:nth-of-type(2){
+    top: 15%;
+    right: 17%;
+    transform: rotate(60deg);
+}
+
+    
+</style>
+
+</head>
+<body>
+    <div class="wheel">
+        <spanclass="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+        <div class="cabin"></div>
+    </div>
+</body>
+</html>
